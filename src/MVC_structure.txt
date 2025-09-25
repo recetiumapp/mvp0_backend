@@ -1,0 +1,37 @@
+Listado de rutas de carpetas
+El número de serie del volumen es C0D1-FF6F
+C:.
+│   main.py
+│   MVC_structure.txt
+│   
+├───api
+│   │   deps.py
+│   │   
+│   └───routes
+│           author.py
+│           post.py
+│           tag.py
+│           
+├───core
+│       config.py
+│       
+├───crud
+│       author.py
+│       post.py
+│       tag.py
+│       
+├───db
+│       base.py
+│       base_class.py
+│       session.py
+│       
+├───models
+│       author.py
+│       post.py
+│       tag.py
+│       
+└───schemas
+        author.py
+        post.py
+        tag.py
+        
