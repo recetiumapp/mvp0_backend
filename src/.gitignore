@@ -1,0 +1,66 @@
+# Author: Rob Palencia / Sept-2025
+# Recetium MVP 0 - .gitignore
+
+# ========================
+# Environment & Secrets
+# ========================
+.env
+*.env
+
+# ========================
+# Python
+# ========================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pkl
+*.db
+
+# ========================
+# Virtual environments
+# ========================
+.venv/
+venv/
+ENV/
+env/
+
+# ========================
+# Logs & Debug
+# ========================
+*.log
+*.pot
+*.mo
+
+# ========================
+# IDE & Editor configs
+# ========================
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ========================
+# OS Files
+# ========================
+.DS_Store
+Thumbs.db
+
+# ========================
+# Coverage & Tests
+# ========================
+.coverage
+htmlcov/
+.tox/
+pytest_cache/
+.mypy_cache/
+.pytest_cache/
+.cache/
+
+# ========================
+# Build & Dist
+# ========================
+build/
+dist/
+*.egg-info/
+.eggs/
