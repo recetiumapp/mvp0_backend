@@ -8,17 +8,12 @@ C:.
 │   │   deps.py
 │   │   
 │   └───routes
-│           author.py
-│           post.py
-│           tag.py
-│           
+│           alley.py
 ├───core
 │       config.py
 │       
 ├───crud
-│       author.py
-│       post.py
-│       tag.py
+│       alley.py
 │       
 ├───db
 │       base.py
@@ -26,12 +21,8 @@ C:.
 │       session.py
 │       
 ├───models
-│       author.py
-│       post.py
-│       tag.py
+│       alley.py
 │       
 └───schemas
-        author.py
-        post.py
-        tag.py
-        
+        alley.py
+.env   

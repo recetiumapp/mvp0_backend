@@ -1,1 +1,0 @@
-# posts data table model 
