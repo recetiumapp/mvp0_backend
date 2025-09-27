@@ -8,7 +8,7 @@
 
 import uvicorn
 from fastapi import FastAPI
-from api.routes import alley
+from api.routes import users, alley
 from db.session import init_db
 
 app = FastAPI(title="Recetium API - MVP 0")
@@ -17,6 +17,7 @@ app = FastAPI(title="Recetium API - MVP 0")
 async def startup():
     await init_db()
 
+app.include_router(users.router)
 app.include_router(alley.router)
 
 if __name__ == "__main__":
