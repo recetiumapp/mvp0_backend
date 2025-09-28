@@ -14,6 +14,9 @@ class Settings(BaseSettings):
     db_host: str
     db_port: str
     db_name: str
+    SECRET_KEY: str
+    ACCESS_TOKEN_EXPIRE_MINUTES: int = 60
+    ALGORITHM: str = "HS256"
 
     class Config:
         env_file = ".env"

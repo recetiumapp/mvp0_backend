@@ -9,11 +9,11 @@ from pydantic import BaseModel, EmailStr
 from typing import Optional
 from uuid import UUID
 from datetime import datetime
-
+from typing import Literal
 
 class UserBase(BaseModel):
     user_email: EmailStr
-    user_role: str
+    user_role: Literal["patient", "ally", "backoffice", "admin"]
     user_name: Optional[str] = None
     user_phone: Optional[str] = None
     user_qr_code: Optional[str] = None
