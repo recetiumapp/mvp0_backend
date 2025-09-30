@@ -1,0 +1,73 @@
+Listado de rutas de carpetas
+El número de serie del volumen es C0D1-FF6F
+C:.
+│   .env
+│   .gitignore
+│   main.py
+│   MVC_structure.txt
+│   tree.txt
+│   
+├───api
+│   │   deps.py
+│   │   __init__.py
+│   │   
+│   ├───routes
+│   │   │   alley.py
+│   │   │   users.py
+│   │   │   __init__.py
+│   │   │   
+│   │   └───__pycache__
+│   │           alley.cpython-313.pyc
+│   │           users.cpython-313.pyc
+│   │           __init__.cpython-313.pyc
+│   │           
+│   └───__pycache__
+│           deps.cpython-313.pyc
+│           __init__.cpython-313.pyc
+│           
+├───core
+│   │   config.py
+│   │   security.py
+│   │   __init__.py
+│   │   
+│   └───__pycache__
+│           config.cpython-313.pyc
+│           security.cpython-313.pyc
+│           __init__.cpython-313.pyc
+│           
+├───crud
+│   │   alley.py
+│   │   users.py
+│   │   __init__.py
+│   │   
+│   └───__pycache__
+│           alley.cpython-313.pyc
+│           users.cpython-313.pyc
+│           __init__.cpython-313.pyc
+│           __init__.py
+│           
+├───db
+│   │   base.py
+│   │   base_class.py
+│   │   session.py
+│   │   __init__.py
+│   │   
+│   └───__pycache__
+│           session.cpython-313.pyc
+│           __init__.cpython-313.pyc
+│           
+├───models
+├───schemas
+│   │   alley.py
+│   │   users.py
+│   │   __init__.py
+│   │   
+│   └───__pycache__
+│           alley.cpython-313.pyc
+│           users.cpython-313.pyc
+│           __init__.cpython-313.pyc
+│           __init__.py
+│           
+└───__pycache__
+        main.cpython-313.pyc
+        

@@ -9,6 +9,7 @@ from fastapi import APIRouter, Depends, HTTPException
 from typing import List
 from uuid import UUID
 from db.session import get_db
+from api.deps import require_role
 import crud.users as crud_users
 from schemas.users import UserOut, UserCreate, UserUpdate, LoginRequest, TokenResponse
 
@@ -20,10 +21,14 @@ async def create_user(user: UserCreate, db=Depends(get_db)):
     return await crud_users.create_user(db, user)
 
 
-@router.get("/", response_model=List[UserOut])
-async def list_users(db=Depends(get_db)):
-    return await crud_users.get_all_users(db)
+# @router.get("/", response_model=List[UserOut])
+# async def list_users(db=Depends(get_db)):
+#     return await crud_users.get_all_users(db)
 
+@router.get("/", dependencies=[Depends(require_role("admin", "backoffice"))])
+async def list_users(db=Depends(get_db)):
+    # return await crud_users.get_users(db)
+    return await crud_users.get_all_users(db)
 
 @router.get("/{user_id}", response_model=UserOut)
 async def read_user(user_id: UUID, db=Depends(get_db)):

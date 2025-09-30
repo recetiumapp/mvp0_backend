@@ -6,6 +6,7 @@
 # Defines API routes for managing allies: list, retrieve, create, update, delete.
 
 from fastapi import APIRouter, Depends, HTTPException
+from api.deps import get_current_user, require_role
 from typing import List
 from uuid import UUID
 from db.session import get_db
