@@ -18,7 +18,7 @@ app = FastAPI(title="Recetium API - MVP 0")
 origins = [
     "http://127.0.0.1:8001",  # frontend local
     "http://localhost:8001",  # frontend local con localhost
-    "http://app.recetium.com",  # frontend 
+    "https://app.recetium.com",  # frontend 
     "https://recetium-frontend.onrender.com"
 ]
 
