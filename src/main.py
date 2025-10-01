@@ -13,7 +13,7 @@ from api.routes import users, alley
 from db.session import init_db
 
 app = FastAPI(title="Recetium API - MVP 0")
-
+ 
 # CORS configuration
 origins = [
     "http://127.0.0.1:8001",  # frontend local
