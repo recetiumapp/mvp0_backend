@@ -13,7 +13,8 @@ pool = None
 
 async def init_db():
     global pool
-    pool = await asyncpg.create_pool(DATABASE_URL)
+    pool = await asyncpg.create_pool(DATABASE_URL), 
+    timeout=30.0
 
 async def get_db():
     return pool
