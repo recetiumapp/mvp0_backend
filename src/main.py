@@ -19,7 +19,8 @@ origins = [
     "http://127.0.0.1:8001",  # frontend local
     "http://localhost:8001",  # frontend local con localhost
     "https://app.recetium.com",  # frontend 
-    "https://recetium-frontend.onrender.com"
+    "https://recetium.com",  # frontend 
+    "https://recetium-frontend.onrender.com" # render
 ]
 
 app.add_middleware(
