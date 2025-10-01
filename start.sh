@@ -1,5 +1,4 @@
-# Paso 1: Establece el PYTHONPATH
+#!/usr/bin/env bash
 export PYTHONPATH=./src:$PYTHONPATH 
 
-# Paso 2: Ejecuta Uvicorn apuntando al módulo (la forma correcta)
-uvicorn src.main:app --host 0.0.0.0 --port 8000 --reload
+gunicorn src.main:app --workers 4 --worker-class uvicorn.workers.UvicornWorker --bind 0.0.0.0:$PORT
